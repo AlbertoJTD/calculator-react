@@ -8,13 +8,21 @@
   font-size: 38px;
   background-color: #1b1b32;
   color: white;
-  border-radius: 25px;
+  border-radius: 50px;
   border: 2px solid white;
   margin: 4px;
   cursor: pointer;
   user-select: none;
 }
 
+.button-container:hover {
+  background-color: #a70130;
+}
+
 .operation {
-  background-color: #00471b;
+  background-color: #ac7404;
+}
+
+.operation:hover {
+  background-color: #0a8795;
 }
