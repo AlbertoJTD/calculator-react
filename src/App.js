@@ -1,8 +1,8 @@
 import './App.css';
-import logo from './images/spiderman.png'
 import Button from './components/Button'
 import Display from './components/Display.jsx'
 import ClearButton from './components/ClearButton';
+import Logo from './components/Logo'
 
 import { useState } from 'react';
 import { evaluate } from 'mathjs';
@@ -25,10 +25,11 @@ function App() {
 
   return (
     <div className="App">
-      <div className='logo-container'>
-        <img src={logo} alt='logo' className='logo' />
-        Spider - Calculator 🕸
-      </div>
+      <Logo 
+        image='spiderman.png'
+        alt='Spiderman logo'
+        content='Spider - Calculator 🕸'
+      />
       <div className="calculator-container">
         <Display
           input = { input }
