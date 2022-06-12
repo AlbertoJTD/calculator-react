@@ -8,7 +8,8 @@ function Button(props) {
   }
 
   return (
-    <div className={ `button-container ${isOperation(props.children) ? 'operation' : '' }`.trimEnd() }>
+    <div className={ `button-container ${isOperation(props.children) ? 'operation' : '' }`.trimEnd()}
+         onClick={() => props.handleClick(props.children)}>
       { props.children }
     </div>
   );
